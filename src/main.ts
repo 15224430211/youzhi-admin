@@ -1,6 +1,7 @@
 import Vue from 'vue'
-// import './plugins/axios'
+// import './requset/axios'
 import App from './App.vue'
+import router from '@/router/router'
 import vuetify from './plugins/vuetify';
 import '@babel/polyfill'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
@@ -11,5 +12,6 @@ Vue.config.productionTip = false
 
 new Vue({
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
